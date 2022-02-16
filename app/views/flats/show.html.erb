@@ -1,0 +1,36 @@
+<div class="show">
+  <div class="banner" style="background-image: url(<%=@flat.image%>)">
+  </div>
+  <div class="container overlap">
+    <div class="row">
+        <div class="col-8">
+          <div class='bg-light p-4 m-4 flat-show-card'>
+            <h1><%= @flat.name %></h1>
+            <p><%= @flat.address %></p>
+          </div>
+          <div class='bg-light p-4 m-4 flat-show-card'>
+            <h2>A bit more about this flat</h2>
+            <p><%= @flat.description %>
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class='bg-light p-4 m-4 flat-show-card'>
+            <h3>Book this place!</h3>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">From</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">To</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+          </div>
+          <div class='bg-light p-4 m-4 flat-show-card'>
+            <h1>Details</h1>
+            <p><i class="fa-solid fa-user-group"></i> <%= @flat.number_of_guests %> <i class="fa-solid fa-dollar-sign"></i> <%= @flat.price_per_night %></p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
